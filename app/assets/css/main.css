@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-updown {
+  animation: updown 2s ease-in-out infinite alternate-reverse both;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
