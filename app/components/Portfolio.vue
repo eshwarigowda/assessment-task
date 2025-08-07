@@ -60,7 +60,7 @@
               </button>
 
               <!-- Link Icon -->
-              <NuxtLink :to="`pages/portfolio-details`">
+              <NuxtLink :to="`portfolio-details`">
                 <i class="fas fa-link"></i>
               </NuxtLink>
             </div>
