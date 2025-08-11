@@ -47,8 +47,8 @@ const testimonials = [
 </script>
 
 <template>
-  <section class="py-14 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
+  <section data-aos="fade-up" class="py-14 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-5 lg:px-5">
       <!-- Heading -->
       <div class="text-center mb-12 relative">
         <h2

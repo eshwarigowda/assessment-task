@@ -1,6 +1,6 @@
 <template>
   <footer class="w-full bg-white text-gray-700 pt-10 py-10 border-t border-gray-200">
-    <section class="max-w-7xl mx-auto px-4 sm:px-22 lg:px-22">
+    <section data-aos="fade-up" class="max-w-7xl mx-auto px-4 sm:px-5 lg:px-5">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-y-8 gap-x-6 pb-8">
         
         <!-- Company Info -->

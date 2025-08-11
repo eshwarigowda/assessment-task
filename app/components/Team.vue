@@ -39,8 +39,8 @@ const teamMembers = [
 </script>
 
 <template>
-  <section id="team" class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 lg:py-0">
+  <section data-aos="fade-up" id="team" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-5 lg:py-0">
       <div class="text-center mb-6 relative -mt-12">
         <h2 class="text-5xl sm:text-6xl font-semibold text-gray-100 absolute inset-0 flex items-center justify-center select-none -mt-4">TEAM</h2>
         <h3 class="relative text-3xl sm:text-4xl font-medium text-gray-600 pt-20">TEAM</h3>

@@ -1,6 +1,6 @@
 <script setup>
 import Card from "@/components/Card.vue";
-import Basebutton from "./BaseButton.vue";
+import Basebutton from "~/components/BaseButton.vue";
 import { BaseButton } from "#components";
 
 const infoCards = [
@@ -27,9 +27,9 @@ const infoCards = [
 
 <template>
   <!-- Hero Section -->
-  <section
+  <section data-aos="fade-up"
     id="home"
-    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 py-50 sm:py-16 mt-20 sm:mt-30 lg:mt-70"
+    class="max-w-7xl mx-auto px-2 md:px-5 lg:px-5 py-50 sm:py-16 mt-20 sm:mt-30 lg:mt-70"
   >
     <div
       class="w-full flex flex-col lg:flex-row-reverse justify-between items-start"
@@ -47,9 +47,9 @@ const infoCards = [
 
       <!-- Text Content -->
       <div
-        class="w-full lg:w-1/2 flex flex-col justify-center space-y-6 text-left mt-10 lg:mt-0 sm:px-0 px-0"
+        class="w-full lg:w-1/2 flex flex-col justify-center space-y-6 text-left mt-10 lg:mt-0 sm:px-0 -px-2"
       >
-        <h1 class="text-3xl sm:text-5xl font-bold text-gray-500">
+        <h1 class="text-3xl sm:text-6xl font-bold text-gray-500">
           Elegant and creative solutions
         </h1>
         <p class="text-lg sm:text-xl text-gray-500">
@@ -77,7 +77,7 @@ const infoCards = [
   <!-- Info Section -->
   <section
     id="featured-services"
-    class="py-2 sm:py-20 bg-white relative max-w-7xl mx-auto px-2 sm:px-6 lg:px-20"
+    class="py-2 sm:py-20 bg-white relative max-w-7xl mx-auto px-2 sm:px-6 lg:px-5"
   >
     <div class="grid gap-8 lg:grid-cols-3 mt-[-100px]">
       <Card

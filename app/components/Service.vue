@@ -37,8 +37,8 @@ const serviceCards = [
 </script>
 
 <template>
-  <section id="service" class="py-6 sm:py-2 bg-gray-50 lg:-mt-14">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 py-1">
+  <section data-aos="fade-up" id="service" class="py-6 sm:py-2 bg-gray-50 lg:-mt-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-5 py-1">
       <!-- Heading Section -->
       <div class="text-center mb-6 relative">
         <h2
@@ -68,7 +68,7 @@ const serviceCards = [
           :title="card.title"
           :description="card.description"
           bg="bg-white"
-          height="min-h-[400px] sm:min-h-[360px] md:min-h-[360px"
+          height="min-h-[400px] sm:min-h-[360px] md:min-h-[400px]"
           class="p-6 pt-20 text-center border border-gray-200 hover:border-green-500 shadow transition duration-300"
   />
 </NuxtLink>

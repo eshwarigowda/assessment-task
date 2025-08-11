@@ -1,5 +1,5 @@
 <script setup>
-import StatCard from './StatCard.vue' // Assuming both are in components folder
+import StatCard from './StatCard.vue' 
 
 const openYoutube = () => {
   window.open('https://www.youtube.com/watch?v=Y7f98aduVJ8', '_blank')
@@ -7,7 +7,7 @@ const openYoutube = () => {
 </script>
 
 <template>
-  <section id="about" class="py-2 sm:py-2 bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
+  <section data-aos="fade-up" id="about" class="py-2 sm:py-2 bg-white max-w-7xl mx-auto px-4 sm:px-5 lg:px-5">
     <div>
       <!-- Heading Section -->
       <div class="text-center mb-6 relative">
@@ -54,13 +54,13 @@ const openYoutube = () => {
 
         <!-- Text -->
         <div class="w-full lg:w-1/2 text-left">
-          <h2 class="text-3xl sm:text-2xl font-bold text-gray-500 mb-4 -mt-4 sm:mt-10">
+          <h2 class="text-3xl sm:text-3xl font-bold text-gray-500 mb-4 -mt-4 sm:mt-10">
             Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.
           </h2>
-          <p class="text-base sm:text-base text-gray-700 italic mb-4">
+          <p class="text-base sm:text-lg text-gray-700 italic mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <ul class="text-base sm:text-base space-y-2 text-gray-700">
+          <ul class="text-base sm:text-lg space-y-2 text-gray-700">
             <li class="flex items-start gap-2">
               <svg
                 class="w-6 h-6 text-green-500 mt-1 flex-shrink-0"
@@ -103,7 +103,7 @@ const openYoutube = () => {
               </span>
             </li>
           </ul>
-          <p class="text-base sm:text-base mt-4 sm:mt-2 text-gray-700">
+          <p class="text-base sm:text-lg mt-4 sm:mt-2 text-gray-700">
             Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
             velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
           </p>
@@ -113,7 +113,7 @@ const openYoutube = () => {
   </section>
 
   <!-- Stats Section -->
-  <section class="py-24 bg-white">
+  <section data-aos="fade-up" class="py-24 bg-white">
     <div
       class="stats-section max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center mt-2 ">
       <StatCard :value="232" label="Clients" />

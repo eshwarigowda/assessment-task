@@ -36,8 +36,8 @@ const contactItems = [
 </script>
 
 <template>
-  <section id="contact" class="py-12 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-20 py-1">
+  <section data-aos="fade-up" id="contact" class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-5 md:px-5 py-1">
       <!-- Heading Section -->
       <div class="text-center mb-6 relative">
         <!-- Background-->
@@ -58,7 +58,7 @@ const contactItems = [
         class="grid grid-cols-1 md:grid-cols-[40%_57%] gap-y-8 md:gap-x-6 box-border"
       >
         <!-- Left Side: Contact Info -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="bg-white p-6 shadow-md">
           <div class="space-y-6">
             <ContactInfoItem
               v-for="item in contactItems"
@@ -83,7 +83,7 @@ const contactItems = [
         </div>
 
         <!-- Right Side: Contact Form -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="bg-white p-6 shadow-md">
           <form class="space-y-4 max-w-xl mx-auto" @submit.prevent="onSubmit">
             <!-- Name & Email Fields -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">

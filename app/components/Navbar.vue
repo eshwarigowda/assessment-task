@@ -47,7 +47,7 @@ onUnmounted(() => {
   <header
     :class="[ 'fixed top-0 w-full z-50 bg-white border-gray-200', hasShadow ? 'shadow-md' : '' ]"
   >
-    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-6 sm:py-6 md:px-20">
+    <div class="max-w-7xl mx-auto px-4 py-6 sm:py-6 md:px-5 flex items-center justify-between ">
 
       <div class="flex items-center gap-4">
         <h1 class="text-3xl font-bold text-gray-600 whitespace-nowrap font-raleway">

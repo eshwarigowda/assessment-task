@@ -35,7 +35,7 @@ import Footer from '~/components/Footer.vue';
 
 <template>
   <Navbar />
-  <div class="bg-white overflow-x-hidden">
+  <div data-aos="fade-up" class="bg-white overflow-x-hidden">
     <!-- Header -->
      <div class="mt-[100px] sm:mt-[100px] flex flex-col sm:flex-row justify-between sm:items-center bg-gray-100 px-4 sm:px-6 py-4 space-y-2 sm:space-y-0">
       <h1 class="text-xl font-semibold text-gray-800">Portfolio Details</h1>

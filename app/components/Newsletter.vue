@@ -9,7 +9,7 @@ function onSubmit() {
 
 <template>
   <!-- Newsletter Section -->
-  <section class="bg-gray-100 py-30 px-4">
+  <section data-aos="fade-up" class="bg-gray-100 py-30 px-4">
     <div class="max-w-3xl mx-auto text-center">
       <h2 class="text-2xl font-bold text-gray-800 mb-2">Join Our Newsletter</h2>
       <p class="text-gray-600 mb-6">

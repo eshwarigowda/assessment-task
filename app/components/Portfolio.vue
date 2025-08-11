@@ -55,8 +55,8 @@ const filteredPortfolio = computed(() => {
 </script>
 
 <template>
-  <section id="portfolio" class="py-10 bg-white">
-    <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
+  <section data-aos="fade-up" id="portfolio" class="py-10 bg-white">
+    <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-5">
       <!-- Heading Section -->
       <div class="text-center mb-6 relative">
         <h2
@@ -97,7 +97,7 @@ const filteredPortfolio = computed(() => {
           :title="''"
           :description="''"
           :imageCover="true"
-          height="h-64"
+          height="h-72"
           class="relative shadow border border-gray-200 cursor-pointer"
           @click="isMobile && toggleCard(index)"
           @mouseenter="!isMobile && (hoverIndex = index)"

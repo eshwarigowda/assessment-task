@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[#10bc69] py-20">
+  <section data-aos="fade-up" class="bg-[#10bc69] py-20">
     <div class="max-w-3xl mx-auto text-center text-white px-4">
       <h2 class="text-3xl font-bold mb-4">Call To Action</h2>
       <p class="mb-8">

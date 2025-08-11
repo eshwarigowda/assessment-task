@@ -1,3 +1,21 @@
+<script setup>
+import Navbar from '~/components/Navbar.vue';
+import Newsletter from '~/components/Newsletter.vue';
+import Footer from '~/components/Footer.vue';
+
+const services = [
+  'web-design',
+  'product-management',
+  'graphic-design',
+  'marketing',
+]
+
+const selectedService = ref('web-design')
+
+const formatServiceName = (name) =>
+  name.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase())
+</script>
+
 <template>
   <Navbar />
   <div class="bg-white pt-24">
@@ -117,20 +135,3 @@
   </div>
 </template>
 
-<script setup>
-import Navbar from '~/components/Navbar.vue';
-import Newsletter from '~/components/Newsletter.vue';
-import Footer from '~/components/Footer.vue';
-
-const services = [
-  'web-design',
-  'product-management',
-  'graphic-design',
-  'marketing',
-]
-
-const selectedService = ref('web-design')
-
-const formatServiceName = (name) =>
-  name.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase())
-</script>
