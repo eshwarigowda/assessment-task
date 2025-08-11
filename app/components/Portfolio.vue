@@ -141,7 +141,6 @@ const filteredPortfolio = computed(() => {
         :src="fullImage"
         class="max-w-[60vw] max-h-[60vh] rounded shadow-lg object-contain"
         alt="Full portfolio item"
-        style="border: 3px solid red; display: block;"
       />
   
 
