@@ -16,4 +16,54 @@
 html {
   scroll-behavior: smooth;
 }
+html, body {
+  overflow-x: hidden;  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.font-raleway {
+  font-family: 'Raleway', sans-serif !important;
+}
+
+
+.stats-section .value {
+  font-family: 'Roboto', sans-serif !important; 
+}
+
+.stats-section .label {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-family: 'Raleway', sans-serif;
+}
+
+body, p, span, li, a, button, input {
+  font-family: 'Roboto', sans-serif;
+}
+
+button, .btn, a.btn, a[role="button"] {
+  font-family: 'Raleway', sans-serif !important;
+}
+
+footer h1, footer h2, footer h3, footer strong {
+  font-family: 'Raleway', sans-serif;
+}
+
+footer p, footer li, footer a, footer a:hover {
+  font-family: 'Roboto', sans-serif;
+}
+
+#team h2, #team h3, #team .font-semibold {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+#team p, #team .italic, #team .text-gray-600 {
+  font-family: 'Roboto', sans-serif;
+}
 

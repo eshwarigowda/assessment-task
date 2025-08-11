@@ -3,6 +3,7 @@
 import Hero from '~/components/Hero.vue'
 import Navbar from '~/components/Navbar.vue'
 import Aboutstats from '~/components/Aboutstats.vue';
+
 import Service from '~/components/Service.vue';
 import Portfolio from '~/components/Portfolio.vue';
 import TestimonialsSection from '~/components/TestimonialsSection.vue';

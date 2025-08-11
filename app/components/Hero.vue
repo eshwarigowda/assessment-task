@@ -1,41 +1,73 @@
+<script setup>
+import Card from "@/components/Card.vue";
+import Basebutton from "./BaseButton.vue";
+import { BaseButton } from "#components";
+
+const infoCards = [
+  {
+    icon: "fas fa-chart-line",
+    title: "Lorem Ipsum",
+    description:
+      "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi",
+  },
+  {
+    icon: "fas fa-square",
+    title: "Sed ut perspici",
+    description:
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore",
+  },
+  {
+    icon: "fas fa-calendar-alt",
+    title: "Magni Dolores",
+    description:
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia",
+  },
+];
+</script>
+
 <template>
   <!-- Hero Section -->
-  <section id="home" class="max-w-7xl mx-auto px-5 py-16 mt-80">
-    <div class="w-full flex flex-col lg:flex-row-reverse justify-between items-start">
-      
+  <section
+    id="home"
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 py-50 sm:py-16 mt-20 sm:mt-30 lg:mt-70"
+  >
+    <div
+      class="w-full flex flex-col lg:flex-row-reverse justify-between items-start"
+    >
       <!-- Hero Image -->
-      <div class="w-full lg:w-1/2 mt-10 lg:mt-0 text-center lg:text-right lg:ml-12 lg:mr-2">  
+      <div
+        class="w-full lg:w-1/2 -mt-28 flex justify-center lg:justify-end lg:ml-12 lg:mr-2"
+      >
         <img
           src="/image/hero-img.png"
           alt="Hero Image"
-          class="w-full h-auto mx-auto lg:mx-0 lg:-mt-16 animate-updown"
+          class="w-[100%] sm:w-[70%] md:w-[60%] lg:w-full h-auto animate-updown"
         />
       </div>
 
       <!-- Text Content -->
-      <div class="w-full lg:w-1/2 flex flex-col justify-center space-y-6 text-left mt-10 lg:mt-0">
-        <h1 class="text-5xl sm:text-6xl font-bold text-gray-500">
+      <div
+        class="w-full lg:w-1/2 flex flex-col justify-center space-y-6 text-left mt-10 lg:mt-0 sm:px-0 px-0"
+      >
+        <h1 class="text-3xl sm:text-5xl font-bold text-gray-500">
           Elegant and creative solutions
         </h1>
-        <p class="text-xl sm:text-2xl text-gray-500">
+        <p class="text-lg sm:text-xl text-gray-500">
           We are a team of talented designers making websites with Bootstrap.
         </p>
 
         <!-- Buttons -->
-        <div class="flex flex-row items-center space-x-6">
-          <a
-            href="#about"
-            class="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full shadow-md transition duration-300"
-          >
+        <div class="flex flex-row items-center space-x-2 flex-nowrap">
+          <BaseButton href="#about">
             Get Started
-        </a>
+          </BaseButton>
 
           <a
             href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-            class="text-green-600 font-medium flex items-center space-x-2 hover:text-green-700 transition"
+            class="font-medium flex items-center space-x-1 hover:text-green-700 transition whitespace-nowrap"
           >
-            <i class="fas fa-play-circle text-xl"></i>
-            <span>Watch Video</span>
+            <i class="fas fa-play-circle text-xl text-green-500"></i>
+            <span class="text-black">Watch Video</span>
           </a>
         </div>
       </div>
@@ -43,57 +75,26 @@
   </section>
 
   <!-- Info Section -->
-  
-    <section id="featured-services" class="py-20 bg-white relative lg:-mt-18">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="flex flex-col lg:flex-row gap-8">
-
-        <!-- Item 1 -->
-        <div class="flex-1 bg-gray-100 shadow-md p-8 text-left min-h-[290px] transform transition-transform duration-300 hover:-translate-y-3">
-          <div class="mt-14">
-            <div class="text-green-600 text-4xl mb-4">
-              <i class="fas fa-chart-line"></i>
-            </div>
-            <h4 class="text-xl font-semibold mb-2 mt-4">
-              <a href="#" class="hover:underline">Lorem Ipsum</a>
-            </h4>
-            <p class="text-gray-600">
-              Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
-            </p>
-          </div>
-        </div>
-
-        <!-- Item 2 -->
-        <div class="flex-1 bg-gray-100 shadow-md p-8 text-left min-h-[290px] transform transition-transform duration-300 hover:-translate-y-3">
-          <div class="mt-14">
-            <div class="text-green-600 text-4xl mb-4">
-              <i class="fas fa-square"></i>
-            </div>
-            <h4 class="text-xl font-semibold mb-2">
-              <a href="#" class="hover:underline">Sed ut perspici</a>
-            </h4>
-            <p class="text-gray-600">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-            </p>
-          </div>
-        </div>
-
-        <!-- Item 3 -->
-        <div class="flex-1 bg-gray-100 shadow-md p-8 text-left min-h-[290px] transform transition-transform duration-300 hover:-translate-y-3">
-          <div class="mt-14">
-            <div class="text-green-600 text-4xl mb-4">
-              <i class="fas fa-calendar-alt"></i>
-            </div>
-            <h4 class="text-xl font-semibold mb-2">
-              <a href="#" class="hover:underline">Magni Dolores</a>
-            </h4>
-            <p class="text-gray-600">
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            </p>
-          </div>
-        </div>
-
-      </div>
+  <section
+    id="featured-services"
+    class="py-2 sm:py-20 bg-white relative max-w-7xl mx-auto px-2 sm:px-6 lg:px-20"
+  >
+    <div class="grid gap-8 lg:grid-cols-3 mt-[-100px]">
+      <Card
+        v-for="(card, index) in infoCards"
+        :key="index"
+        :icon="card.icon"
+        :title="card.title"
+        :description="card.description"
+        bg="bg-gray-20" 
+        height="h-65"
+        class="bg-gray-100 hover:-translate-y-3 transition-transform flex items-start text-left text-gray-400 p-14"
+        
+      />
     </div>
   </section>
 </template>
+
+<style scoped>
+
+</style>

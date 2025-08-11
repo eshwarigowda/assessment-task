@@ -12,10 +12,13 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.0.0",
     "@tailwindcss/vite": "^4.1.11",
-    "nuxt": "^4.0.1",
+    "aos": "^2.3.4",
     "swiper": "^11.2.10",
     "tailwindcss": "^4.1.11",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "nuxt": "^4.0.3"
   }
 }

@@ -1,3 +1,12 @@
+<script setup>
+import BaseButton from '@/components/BaseButton.vue'
+
+function onSubmit() {
+  alert('Subscribed!')
+}
+
+</script>
+
 <template>
   <!-- Newsletter Section -->
   <section class="bg-gray-100 py-30 px-4">
@@ -7,20 +16,21 @@
         Subscribe to our newsletter and receive the latest news about our products and services!
       </p>
       <!-- Form with white container -->
-      <form class="max-w-xl mx-auto">
+      <form class="max-w-xl mx-auto" @submit.prevent="onSubmit">
         <div class="flex items-center bg-white rounded-full shadow-md border border-gray-300 px-2">
           <input
             type="email"
             class="w-full rounded-full px-6 py-3 bg-transparent focus:outline-none"
           />
-          <button
+          <BaseButton
             type="submit"
-            class="bg-green-500 text-white px-5 py-2 rounded-full hover:bg-green-600 transition"
-          >
-            Subscribe
-          </button>
+            label="Subscribe"
+            size="sm"
+            class="rounded-full px-5 py-2 ml-2"
+          />
         </div>
       </form>
     </div>
   </section>
 </template>
+
