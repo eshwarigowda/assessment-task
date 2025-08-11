@@ -55,7 +55,7 @@ onUnmounted(() => {
         </h1>
 
         <!-- Mobile: smaller Get Started button visible only on mobile -->
-        <div class="md:hidden flex items-center ml-12">
+        <div class="md:hidden flex items-center ml-25">
           <BaseButton size="sm" href="#about" label="Get Started" />
         </div>
       </div>
@@ -87,7 +87,7 @@ onUnmounted(() => {
       </button>
 
       <!-- Desktop menu -->
-      <nav class="hidden md:flex items-center gap-8 text-base relative ml-auto">
+      <nav class="font-ubuntu hidden md:flex items-center gap-9 text-lg relative ml-auto">
         <a href="#home" class="text-gray-500 hover:text-green-700">Home</a>
         <a href="#about" class="text-gray-500 hover:text-green-700">About</a>
         <a href="#service" class="text-gray-500 hover:text-green-700">Services</a>
@@ -104,11 +104,11 @@ onUnmounted(() => {
             <li class="relative group/sub px-4 py-2 hover:bg-gray-100 cursor-pointer">
               Deep Dropdown <span class="float-right">&#9656;</span>
               <ul class="absolute hidden group-hover/sub:block top-0 left-full ml-1 w-44 bg-white border shadow-md z-50">
-                <li class="px-4 py-2 hover:bg-gray-100">Deep Dropdown 1</li>
-                <li class="px-4 py-2 hover:bg-gray-100">Deep Dropdown 2</li>
-                <li class="px-4 py-2 hover:bg-gray-100">Deep Dropdown 3</li>
-                <li class="px-4 py-2 hover:bg-gray-100">Deep Dropdown 4</li>
-                <li class="px-4 py-2 hover:bg-gray-100">Deep Dropdown 5</li>
+                <li class="px-4 py-2 hover:bg-gray-100">Deep Dropdown1</li>
+                <li class="px-4 py-2 hover:bg-gray-100">Deep Dropdown2</li>
+                <li class="px-4 py-2 hover:bg-gray-100">Deep Dropdown3</li>
+                <li class="px-4 py-2 hover:bg-gray-100">Deep Dropdown4</li>
+                <li class="px-4 py-2 hover:bg-gray-100">Deep Dropdown5</li>
           
               </ul>
             </li>
@@ -132,7 +132,7 @@ onUnmounted(() => {
      ></div>
   <div
     v-if="isOpen"
-    class="fixed top-[64px] left-4 right-4 bottom-0 z-40 bg-white px-6 py-6 space-y-2 overflow-y-auto rounded-lg shadow-lg max-w-[calc(100vw-2rem)]"
+    class="font-ubuntu fixed top-[64px] left-4 right-4 bottom-0 z-40 bg-white px-6 py-6 space-y-2 overflow-y-auto rounded-lg shadow-lg max-w-[calc(100vw-2rem)]"
     style="max-height: calc(100vh - 64px);"
   >
   <a
@@ -204,8 +204,11 @@ onUnmounted(() => {
           </svg>
         </button>
         <div v-if="isSubDropdownOpen" class="ml-4 mt-1 space-y-1">
-          <p class="text-green-900 hover:text-green-700 cursor-pointer py-1">Suboption A</p>
-          <p class="text-green-900 hover:text-green-700 cursor-pointer py-1">Suboption B</p>
+          <p class="text-green-900 hover:text-green-700 cursor-pointer py-1">Deep Dropdown1</p>
+          <p class="text-green-900 hover:text-green-700 cursor-pointer py-1">Deep Dropdown2</p>
+          <p class="text-green-900 hover:text-green-700 cursor-pointer py-1">Deep Dropdown3</p>
+          <p class="text-green-900 hover:text-green-700 cursor-pointer py-1">Deep Dropdown4</p>
+          <p class="text-green-900 hover:text-green-700 cursor-pointer py-1">Deep Dropdown5</p>
         </div>
       </div>
 

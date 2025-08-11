@@ -43,7 +43,7 @@ const teamMembers = [
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-5 lg:py-0">
       <div class="text-center mb-6 relative -mt-12">
         <h2 class="text-5xl sm:text-6xl font-semibold text-gray-100 absolute inset-0 flex items-center justify-center select-none -mt-4">TEAM</h2>
-        <h3 class="relative text-3xl sm:text-4xl font-medium text-gray-600 pt-20">TEAM</h3>
+        <h3 class="relative text-3xl sm:text-4xl font-bold text-gray-600 pt-20">TEAM</h3>
         <p class="relative text-gray-800 mt-6 text-base sm:text-lg max-w-3xl mx-auto">
           Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
         </p>

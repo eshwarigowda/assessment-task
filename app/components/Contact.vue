@@ -46,7 +46,7 @@ const contactItems = [
         >
           SECTION TITLE
         </h2>
-        <h3 class="relative text-3xl font-medium text-gray-600 pt-30 sm:pt-20">CONTACT</h3>
+        <h3 class="relative text-3xl font-bold text-gray-600 pt-30 sm:pt-20">CONTACT</h3>
 
         <p class="relative text-gray-700 mt-8 text-[1.111rem] max-w-3xl mx-auto">
           Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit

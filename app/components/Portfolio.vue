@@ -64,7 +64,7 @@ const filteredPortfolio = computed(() => {
         >
           PORTFOLIO
         </h2>
-        <h3 class="relative text-3xl sm:text-4xl font-medium text-gray-600 pt-20">
+        <h3 class="relative text-3xl sm:text-4xl font-bold text-gray-600 pt-20">
           PORTFOLIO
         </h3>
         <p class="relative text-gray-700 mt-8 text-base sm:text-lg md:text-[1.111rem] max-w-2xl mx-auto">
@@ -139,9 +139,11 @@ const filteredPortfolio = computed(() => {
     >
       <img
         :src="fullImage"
-        class="max-h-[90vh] max-w-[90vw] rounded shadow-lg"
+        class="max-w-[60vw] max-h-[60vh] rounded shadow-lg object-contain"
         alt="Full portfolio item"
+        style="border: 3px solid red; display: block;"
       />
+  
 
       <button
         class="absolute top-6 right-6 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center text-2xl shadow hover:bg-gray-200 transition"

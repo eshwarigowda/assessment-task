@@ -15,10 +15,27 @@
         <div class="text-left md:ml-22">
           <h3 class="text-lg font-semibold mb-4 text-gray-800">Useful Links</h3>
           <ul class="space-y-4 text-sm">
-            <li><a href="#" class="hover:text-green-600">› Home</a></li>
-            <li><a href="#" class="hover:text-green-600">› About us</a></li>
-            <li><a href="#" class="hover:text-green-600">› Services</a></li>
-            <li><a href="#" class="hover:text-green-600">› Terms of service</a></li>
+            <li>
+              <a href="#" class="hover:text-green-600 flex items-center gap-1">
+                <span class="text-green-600 text-lg">›</span> Home
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-600 flex items-center gap-1">
+                <span class="text-green-600 text-lg">›</span> About us
+              </a>
+            </li>
+            
+            <li>
+              <a href="#" class="hover:text-green-600 flex items-center gap-1">
+                <span class="text-green-600 text-lg">›</span> Services
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-600 flex items-center gap-1">
+                <span class="text-green-600 text-lg">›</span> Term of service
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -26,10 +43,27 @@
         <div class="text-left">
           <h3 class="text-lg font-semibold mb-4 text-gray-800">Our Services</h3>
           <ul class="space-y-4 text-sm">
-            <li><a href="#" class="hover:text-green-600">› Web Design</a></li>
-            <li><a href="#" class="hover:text-green-600">› Web Development</a></li>
-            <li><a href="#" class="hover:text-green-600">› Product Management</a></li>
-            <li><a href="#" class="hover:text-green-600">› Marketing</a></li>
+            <li>
+              <a href="#" class="hover:text-green-600 flex items-center gap-1">
+                <span class="text-green-600 text-lg">›</span> Web Design
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-600 flex items-center gap-1">
+                <span class="text-green-600 text-lg">›</span> Web Development
+              </a>
+            </li>
+            
+            <li>
+              <a href="#" class="hover:text-green-600 flex items-center gap-1">
+                <span class="text-green-600 text-lg">›</span> Product Management
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-600 flex items-center gap-1">
+                <span class="text-green-600 text-lg">›</span> Marketing
+              </a>
+            </li>
           </ul>
         </div>
 

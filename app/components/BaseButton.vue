@@ -1,5 +1,5 @@
 <script setup>
-import { computed, ref } from 'vue'
+import { computed } from 'vue'
 
 const props = defineProps({
   href: { type: String, default: null },
@@ -8,7 +8,7 @@ const props = defineProps({
   label: { type: String, default: 'Button' },
   iconOnly: { type: Boolean, default: false },
   iconClass: { type: String, default: '' },
-  bgColor: { type: String, default: '#10BC69' },
+  bgColor: { type: String, default: 'bg-green-600' }, // Tailwind class instead of color code
   hoverColor: { type: String, default: 'hover:bg-green-500' }
 })
 
@@ -23,32 +23,25 @@ const sizeClasses = {
 const baseClasses =
   'text-white font-semibold rounded-full shadow-md transition duration-300 whitespace-nowrap inline-block cursor-pointer'
 
-const buttonClass = computed(() => (sizeClasses[props.size] || sizeClasses.md) + ' ' + baseClasses)
-
-const isHovered = ref(false)
-
-const style = computed(() => ({
-  backgroundColor: isHovered.value ? props.hoverColor : props.bgColor,
-}))
+const buttonClass = computed(() => {
+  const sizeClass = sizeClasses[props.size] || sizeClasses.md
+  return `${sizeClass} ${baseClasses} ${props.bgColor} ${props.hoverColor}`
+})
 </script>
 
 <template>
   <component
-  :is="isLink ? 'a' : 'button'"
-  :href="isLink ? props.href : undefined"
-  :type="isLink ? undefined : props.type"
-  :class="buttonClass"
-  :style="style"
-  @click="$emit('click', $event)"
-  @mouseenter="isHovered.value = true"
-  @mouseleave="isHovered.value = false"
->
-  <slot>
-    <template v-if="iconOnly">
-      <i :class="iconClass"></i>
-    </template>
-    <template v-else>{{ label }}</template>
-  </slot>
-</component>
-
+    :is="isLink ? 'a' : 'button'"
+    :href="isLink ? props.href : undefined"
+    :type="isLink ? undefined : props.type"
+    :class="buttonClass"
+    @click="$emit('click', $event)"
+  >
+    <slot>
+      <template v-if="iconOnly">
+        <i :class="iconClass"></i>
+      </template>
+      <template v-else>{{ label }}</template>
+    </slot>
+  </component>
 </template>

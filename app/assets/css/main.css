@@ -39,6 +39,7 @@ html, body {
   font-family: 'Raleway', sans-serif;
 }
 
+
 h1, h2, h3, h4, h5, h6, strong {
   font-family: 'Raleway', sans-serif;
 }
@@ -67,3 +68,7 @@ footer p, footer li, footer a, footer a:hover {
   font-family: 'Roboto', sans-serif;
 }
 
+.font-ubuntu,
+.font-ubuntu * {
+  font-family: 'Ubuntu', sans-serif !important;
+}

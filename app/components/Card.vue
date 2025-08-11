@@ -6,7 +6,7 @@ defineProps({
   description: { type: String, required: true },
   bg: { type: String, default: "bg-white" },
   height: { type: String, default: "h-56" },
-  imageCover: { type: Boolean, default: false },
+  imageCover: { type: Boolean, default: false }
 });
 </script>
 <template>
@@ -28,7 +28,7 @@ defineProps({
 
 
     <!-- Title -->
-    <h3 class="text-lg font-semibold text-gray-800 mb-2">{{ title }}</h3>
+    <h3 class="text-lg font-semibold text-gray-600 mb-2">{{ title }}</h3>
 
     <!-- Description -->
     <p class="text-gray-600 text-sm">{{ description }}</p>

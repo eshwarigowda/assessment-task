@@ -66,7 +66,7 @@ const infoCards = [
             href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
             class="font-medium flex items-center space-x-1 hover:text-green-700 transition whitespace-nowrap"
           >
-            <i class="fas fa-play-circle text-xl text-green-500"></i>
+            <i class="fas fa-play-circle text-4xl text-green-500"></i>
             <span class="text-black">Watch Video</span>
           </a>
         </div>
@@ -85,16 +85,14 @@ const infoCards = [
         :key="index"
         :icon="card.icon"
         :title="card.title"
+        titleClass="text-gray-600 text-2xl font-semibold"
         :description="card.description"
         bg="bg-gray-20" 
         height="h-65"
-        class="bg-gray-100 hover:-translate-y-3 transition-transform flex items-start text-left text-gray-400 p-14"
+        class="bg-gray-100 hover:-translate-y-3 transition-transform flex items-start text-3xl text-left text-gray-500 p-14"
         
       />
     </div>
   </section>
 </template>
 
-<style scoped>
-
-</style>

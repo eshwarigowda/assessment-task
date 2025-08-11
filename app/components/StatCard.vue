@@ -1,10 +1,3 @@
-<template>
-  <div class="text-center">
-    <h3 class="value text-5xl font-bold text-green-600">{{ animatedValue }}</h3>
-    <p class="label text-gray-500 mt-2 whitespace-nowrap">{{ label }}</p>
-  </div>
-</template>
-
 <script setup>
 import { ref, watch, onMounted } from 'vue'
 
@@ -28,3 +21,11 @@ onMounted(() => {
   }, 1000 / frameRate)
 })
 </script>
+<template>
+  <div class="text-center">
+    <h3 class="value text-5xl font-bold text-green-600">{{ animatedValue }}</h3>
+    <p class="label text-gray-500 mt-2 whitespace-nowrap">{{ label }}</p>
+  </div>
+</template>
+
+

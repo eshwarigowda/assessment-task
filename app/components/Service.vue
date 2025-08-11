@@ -46,7 +46,7 @@ const serviceCards = [
         >
           SERVICES
         </h2>
-        <h3 class="relative text-2xl sm:text-3xl font-medium text-gray-600 pt-8 sm:pt-2 lg:pt-22">
+        <h3 class="relative text-2xl sm:text-3xl font-bold text-gray-600 pt-8 sm:pt-2 lg:pt-22">
           SERVICES
         </h3>
         <p class="relative text-gray-700 mt-4 text-base sm:text-lg md:text-[1.111rem] max-w-xl mx-auto">
@@ -70,8 +70,8 @@ const serviceCards = [
           bg="bg-white"
           height="min-h-[400px] sm:min-h-[360px] md:min-h-[400px]"
           class="p-6 pt-20 text-center border border-gray-200 hover:border-green-500 shadow transition duration-300"
-  />
-</NuxtLink>
+        />
+        </NuxtLink>
 
      
       </div>

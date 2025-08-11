@@ -18,7 +18,7 @@ const openYoutube = () => {
           ABOUT US
         </h2>
 
-        <h3 class="relative text-2xl sm:text-3xl font-medium text-gray-600 pt-20 sm:pt-18">ABOUT</h3>
+        <h3 class="font-bold relative text-2xl sm:text-3xl text-gray-600 pt-20 sm:pt-18">ABOUT</h3>
         <p class="relative text-gray-700 mt-7 sm:mt-2 sm:text-[1.111rem]">
           Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
         </p>

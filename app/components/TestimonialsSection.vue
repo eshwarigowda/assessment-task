@@ -56,7 +56,7 @@ const testimonials = [
         >
           TESTIMONIALS
         </h2>
-        <h3 class="relative text-2xl sm:text-4xl font-medium text-gray-600 pt-2">
+        <h3 class="relative text-2xl sm:text-4xl font-bold text-gray-600 pt-2">
           TESTIMONIALS
         </h3>
         <p class="relative text-gray-700 mt-6 text-base sm:text-lg max-w-3xl mx-auto">
